@@ -1,8 +1,24 @@
-//จงเขียนโปรแกรมเพื่อรับข้อความ 1 ข้อความ แล้วให้โปรแกรมแสดงผลลัพธ์ว่ามีพยัญชนะอะไรบ้าง อย่างละกี่ตัว (Level 3)
+//จงเขียนโปรแกรมแสดงผล Q3ของชุดข้อมูลที่ใส่เข้าไป (Level 3)
 
 #include<stdio.h>
-#include<string.h>
+
+
 
 int main(){
+    int number[20],i,v;
+    printf("enter value of number:");
+    scanf("%d",&v);
+    for(i=0;i<v;i++) {scanf("%d",&number[i]);}
+
+    for (i = 0; i < n; ++i){
+        for (j = i + 1; j < n; ++j){
+            if (number[i] > number[j]){
+                a =  number[i];
+                number[i] = number[j];
+                number[j] = a;
+                }
+            }
+        }
+    
 
 }
