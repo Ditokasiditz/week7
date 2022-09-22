@@ -2,23 +2,23 @@
 
 #include<stdio.h>
 
-
-
 int main(){
-    int number[20],i,v;
+    int number[20],i,n,j,a;
     printf("enter value of number:");
-    scanf("%d",&v);
-    for(i=0;i<v;i++) {scanf("%d",&number[i]);}
+    scanf("%d",&n);
+    for(i=0;i<n;i++) {scanf("%d",&number[i]);}
 
     for (i = 0; i < n; ++i){
         for (j = i + 1; j < n; ++j){
             if (number[i] > number[j]){
-                a =  number[i];
-                number[i] = number[j];
-                number[j] = a;
-                }
+                a =  number[j];
+                number[j] = number[i];
+                number[i] = a;
             }
         }
-    
-
+    }
+    printf("The numbers arranged in ascending order are given below \n");
+        for (i = 0; i < n; ++i)
+            printf("%d\n", number[i]);
+return 0;
 }
