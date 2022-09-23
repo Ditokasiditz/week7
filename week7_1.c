@@ -1,11 +1,11 @@
-//จงเขียนโปรแกรมแสดงผล Q3ของชุดข้อมูลที่ใส่เข้าไป (Level 3)
-
 #include<stdio.h>
 
 int main(){
-    int number[20],i,n,j,a;
+    int number[20],i,n,j,a,full;
+    float Q,q,m;
     printf("enter value of number:");
     scanf("%d",&n);
+    m=n;
     for(i=0;i<n;i++) {scanf("%d",&number[i]);}
 
     for (i = 0; i < n; ++i){
@@ -17,8 +17,16 @@ int main(){
             }
         }
     }
-    printf("The numbers arranged in ascending order are given below \n");
-        for (i = 0; i < n; ++i)
-            printf("%d\n", number[i]);
-return 0;
+    
+    Q = (3*m+3)/4;
+    full = Q;
+    if(full == Q){
+        q=number[full];
+    }
+    else{
+        q= number[full-1]+(Q-full)*(number[full]-number[full-1]);
+    }
+    printf("%f",q);
 }
+
+
