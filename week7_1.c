@@ -2,7 +2,7 @@
 
 int main(){
     int number[20],i,n,j,a,full;
-    float Q,q,m;
+    float Q3,q,m;
     printf("enter value of number:");
     scanf("%d",&n);
     m=n;
@@ -18,15 +18,15 @@ int main(){
         }
     }
     
-    Q = (3*m+3)/4;
-    full = Q;
-    if(full == Q){
+    Q3 = (3*m+3)/4;
+    full = Q3;
+    if(full == Q3){
         q=number[full];
     }
     else{
-        q= number[full-1]+(Q-full)*(number[full]-number[full-1]);
+        q= number[full-1]+(Q3-full)*(number[full]-number[full-1]);
     }
-    printf("%f",q);
+    printf("Q3 = %f",q);
 }
 
 
